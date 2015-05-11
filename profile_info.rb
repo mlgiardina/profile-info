@@ -12,7 +12,9 @@ def print_profile
       country: "United States",
       favorite_foods: ["sushi", "greasy cheeseburgers with pickles and mustard", "soup", "hummus", "anything spicy"],
     }
-
+  elsif justins_response == "MAYBE"
+    puts "You should make up your mind."
+    print_profile
   else
     puts "Well then why are you running this program?"
   end
