@@ -1,6 +1,6 @@
 
 def print_profile
-  print "Hello, Justin. Would you like to view this user's information? Please enter 'Yes' or 'No.'"
+  print "Hello, Justin. Would you like to view this user's information? Please enter 'Yes,' 'No,' or 'Maybe.'"
   justins_response = gets.chomp.upcase
   if justins_response == "YES"
     puts "\nExcellent decision. This user's info is as follows:\n"
@@ -15,8 +15,12 @@ def print_profile
   elsif justins_response == "MAYBE"
     puts "You should make up your mind."
     print_profile
-  else
+  elsif justins_response == "NO"
     puts "Well then why are you running this program?"
+
+  else
+    puts "That's not a valid response."
+    print_profile
   end
 end
 
